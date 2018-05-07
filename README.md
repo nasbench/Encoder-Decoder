@@ -7,7 +7,7 @@ A python script that contains the following functionalities :
 * XoR two strings
 
 ### Script Requirements :
-* Python 2.7.X. or Python 3.X
+* Python 2.7.X
 
 To use the script, use the following command:
 
