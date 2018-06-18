@@ -51,7 +51,7 @@ def de_base2(string_to_decode):
     try:
         s = int(string_to_decode, 2)
         binascii.unhexlify('%x' % s)
-    except (TypeError, ValueError) as error :
+    except (TypeError, ValueError) :
         print "Non-Binary String Provided"
 
 
