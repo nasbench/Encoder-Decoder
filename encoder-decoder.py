@@ -52,7 +52,7 @@ def de_base2(string_to_decode):
         s = int(string_to_decode, 2)
         binascii.unhexlify('%x' % s)
     except (TypeError, ValueError) :
-        print "Non-Binary String Provided"
+        print ("Non-Binary String Provided")
 
 
 def en_base16(string_to_encode):
@@ -66,7 +66,7 @@ def de_base16(string_to_decode):
         decoded_string = base64.b16decode(string_to_decode)
         return decoded_string
     except TypeError:
-        print "Non-Hexadecimal String Provided"
+        print ("Non-Hexadecimal String Provided")
 
 
 def en_base32(string_to_encode):
@@ -78,7 +78,7 @@ def de_base32(string_to_decode):
         decoded_string = base64.b32decode(string_to_decode)
         return decoded_string
     except TypeError:
-        print "Non-Base32 String Provided"
+        print ("Non-Base32 String Provided")
 
 
 def en_base64(string_to_encode):
@@ -90,7 +90,7 @@ def de_base64(string_to_decode):
         decoded_string = base64.b64decode(string_to_decode)
         return decoded_string
     except TypeError:
-        print "Non-Base64 String Provided"
+        print ("Non-Base64 String Provided")
 
 
 def en_all(string_to_encode):
